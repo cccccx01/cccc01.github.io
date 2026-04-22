@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集网站</title>
+    <!-- 这里粘贴你的GA4追踪代码（后面教你获取） -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <h1>欢迎来到我的作品集！</h1>
+    <p>这是我为GA4项目制作的个人网站。</p>
+    
+    <!-- 自定义事件：下载简历按钮 -->
+    <button onclick="gtag('event', 'download_cv', {
+        'event_category': 'Portfolio Interaction',
+        'event_label': 'CV Download Click'
+    });">下载我的简历</button>
+
+    <a href="mailto:your-email@example.com">联系我</a>
+</body>
+</html>
